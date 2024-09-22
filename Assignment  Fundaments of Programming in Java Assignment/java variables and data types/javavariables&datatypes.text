@@ -1,0 +1,233 @@
+1.What is statically typed and Dynamically typed Programming Language?
+
+answer= The terms statically typed and dynamically typed refer to how programming languages handle variable types and type checking. Here’s a breakdown of both concepts:
+
+Statically Typed Languages
+In statically typed languages, the type of a variable is known at compile time. This means that you must declare the type of a variable when you create it, and the type cannot change during the program's execution.
+
+Characteristics:
+Type Safety: Errors related to type mismatches are caught at compile time, which can lead to more robust and error-free code.
+Performance: Because types are known at compile time, compilers can optimize the code better, often resulting in better performance.
+Less Flexibility: You cannot change a variable's type once it has been declared.
+Examples:
+Java
+C
+C++
+
+Rust
+Characteristics:
+Flexibility: You can assign different types to the same variable at different times.
+Ease of Use: Generally allows for quicker prototyping and coding since you don't need to specify types.
+Potential Runtime Errors: Type-related errors may only be caught at runtime, which can lead to runtime exceptions if not handled properly.
+Examples:
+Python
+JavaScript
+Ruby
+PHP
+
+2. what Is variable in java?
+
+answers = n Java, a variable is a named storage location in memory that holds a value. It allows you to store, retrieve, and manipulate data in your program. Each variable has a specific type, which determines the kind of data it can hold (such as integers, floating-point numbers, characters, etc.).
+
+Key Characteristics of Variables:
+Declaration: Before using a variable, you must declare it by specifying its type and name.
+
+Initialization: You can assign a value to a variable when you declare it or later in the code. For example:
+]
+Data Types: Variables in Java can be of different types, including:
+
+Primitive Types: Such as int, float, double, char, boolean, etc.
+Reference Types: Such as arrays, strings, and objects.
+
+3.how to assign value to variable?
+
+answer= 
+
+In Java, assigning a value to a variable is straightforward. You typically do this using the assignment operator =. Here’s a step-by-step guide on how to assign values to different types of variables:
+
+1. Declaration and Initialization
+You can declare a variable and assign it a value in a single line, or you can declare it first and assign a value later.
+
+Example of Declaration and Initialization:
+
+int age = 25; // Declaring and initializing an integer variable
+double salary = 50000.0; // Declaring and initializing a double variable
+String name = "Alice"; // Declaring and initializing a String variable
+
+2.Separate Declaration and Assignment
+You can also declare a variable without initializing it and then assign a value later.
+
+Example:int age; // Declaration
+age = 25; // Assignment
+
+3. Reassigning Values
+Once a variable is declared, you can change its value by reassigning it.
+
+Example:
+age = 30; // Reassigning a new value to the variable 'age'
+
+4. Assigning Values from Expressions
+You can assign values to a variable based on expressions or calculations.
+
+Example:int a = 10;
+int b = 20;
+int sum = a + b; // Assigning the result of an expression to 'sum'
+
+4. what are primitive datatype in java?
+
+answers =
+In Java, primitive data types are the most basic data types provided by the language. They represent single values and are not objects. There are eight primitive data types in Java, each with its own characteristics and range. Here’s a breakdown of each:
+
+1. byte
+Size: 8 bits
+Range: -128 to 127
+Use: Useful for saving memory in large arrays, where the memory savings are crucial.
+2. short
+Size: 16 bits
+Range: -32,768 to 32,767
+Use: Also used to save memory in large arrays, similar to byte.
+3. int
+Size: 32 bits
+Range: -2,147,483,648 to 2,147,483,647
+Use: Commonly used for integer values.
+4. long
+Size: 64 bits
+Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+Use: Used when a wider range than int is needed.
+5. float
+Size: 32 bits
+Use: Used for single-precision floating-point numbers. Often used in calculations that do not require high precision.
+6. double
+Size: 64 bits
+Range: Approximately ±1.79769313486231570E+308 (15 decimal places of precision)
+Use: Used for double-precision floating-point numbers. This is the default type for decimal values.
+7. char
+Size: 16 bits
+Use: Used to store single characters.
+8. boolean
+Size: Not precisely defined (usually 1 bit)
+Values: true or false
+Use: Used for conditional statements and logical operations.
+
+5.what are identifiers in java?
+
+answers= 
+In Java, identifiers are names used to identify variables, methods, classes, packages, and other entities in your code. Here are some key points about identifiers:
+
+Rules for Naming:
+
+An identifier must start with a letter (a-z, A-Z), a dollar sign ($), or an underscore (_).
+Subsequent characters can be letters, digits (0-9), dollar signs, or underscores.
+Identifiers are case-sensitive, meaning myVariable and MyVariable are different.
+They cannot be a reserved keyword (like class, public, etc.).
+Conventions:
+
+Use meaningful names that reflect the purpose of the variable or method (e.g., calculateTotal).
+For variables and methods, the convention is to use camelCase (e.g., myVariable).
+For class names, use PascalCase (e.g., MyClass).
+Constants are often written in uppercase letters with underscores (e.g., MAX_VALUE).
+Length:
+
+Identifiers can be of any length, but it’s best to keep them concise yet descriptive for readability.
+
+example in java 
+
+int age;               // valid identifier
+String name;          // valid identifier
+final int MAX_SIZE = 100; // valid identifier
+void calculateTotal() {}  // valid method identifier
+
+6.list the operator in java?
+
+answers= 
+
+Java has a rich set of operators that can be categorized into several types. Here’s a list of the main operators in Java:
+
+1. Arithmetic Operators
+Used for basic mathematical operations.
+
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+% (Modulus)
+2. Relational Operators
+Used to compare two values.
+
+== (Equal to)
+!= (Not equal to)
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+3. Logical Operators
+Used to combine boolean expressions.
+
+&& (Logical AND)
+|| (Logical OR)
+! (Logical NOT)
+4. Bitwise Operators
+Operate on bits and perform bit-level operations.
+
+& (Bitwise AND)
+| (Bitwise OR)
+^ (Bitwise XOR)
+~ (Bitwise NOT)
+<< (Left shift)
+>> (Right shift)
+>>> (Unsigned right shift)
+5. Assignment Operators
+Used to assign values to variables.
+
+= (Simple assignment)
++= (Add and assign)
+-= (Subtract and assign)
+*= (Multiply and assign)
+/= (Divide and assign)
+%= (Modulus and assign)
+&= (Bitwise AND and assign)
+|= (Bitwise OR and assign)
+^= (Bitwise XOR and assign)
+<<= (Left shift and assign)
+>>= (Right shift and assign)
+>>>= (Unsigned right shift and assign)
+6. Unary Operators
+Operate on a single operand.
+
++ (Unary plus)
+- (Unary minus)
+++ (Increment)
+-- (Decrement)
+! (Logical NOT)
+7. Ternary Operator
+A shorthand for an if-else statement.
+
+condition ? expression1 : expression2
+8. Instanceof Operator
+Checks whether an object is an instance of a specific class or interface.
+
+instance instanceof ClassName
+9. Type Comparison Operator
+Used in type checking.
+
+(type) (Casting)
+These operators allow for a wide range of operations in Java, making the language versatile for various programming tasks.
+
+
+
+7. Explain about Increment and Decrement operators and give an examples.
+
+answers =
+
+Increment and decrement operators are unary operators that are commonly used in programming to increase or decrease the value of a variable by one, respectively. They can be found in many programming languages, including C, C++, Java, and Python (with slightly different syntax).
+
+Increment Operator (++)
+The increment operator increases the value of a variable by one. It can be used in two forms:
+
+Prefix Increment (++x): Increases the value of x by 1 and then returns the new value.
+Postfix Increment (x++): Returns the current value of x, and then increases it by 1.
+Decrement Operator (--)
+The decrement operator decreases the value of a variable by one. It also has two forms:
+
+Prefix Decrement (--x): Decreases the value of x by 1 and then returns the new value.
+Postfix Decrement (x--): Returns the current value of x, and then decreases it by 
